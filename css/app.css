@@ -1,7 +1,17 @@
+@font-face {
+    font-family: 'KitchenCupboard-Crafted'; /* Nombre de la fuente para su uso posterior */
+    src: local('KitchenCupboard-Crafted'), local('MiFuente-Regular'),
+         url('fonts/KitchenCupboard-Crafted.otf') format('otf');
+    font-weight: 400; /* Puedes ajustar esto según las variantes disponibles de tu fuente */
+    font-style: normal; /* Puedes ajustar esto según las variantes disponibles de tu fuente */
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'KitchenCupboard-Crafted' !important; /* Reemplaza 'sans-serif' con una fuente de respaldo si es necesario */
+
 }
 
 .banner {
@@ -18,7 +28,72 @@ body {
     background-repeat: no-repeat;
 }
 
+.statics {
+    min-height: 100vh;
+    background-image: url(/img/bg-statics.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.floating-image {
+    animation: floatAnimationInY 2s ease-in-out infinite;
+}
+
+.overlay {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
 .swiper {
     width: 600px;
-    height: 300px;
+    min-height: 300px;
 }
+
+.swiper-slide {
+    
+    text-align: center;
+}
+
+.ff-black {
+    font-size: 46px;
+}
+
+.ff-cononce-mas{
+    font-size: 25px;
+}
+
+.bg-text-white {
+    margin: 0 auto;
+    text-align: center;
+    padding: 14px;
+    max-width: 31rem;
+    background-image: url(/img/backgrounds/white-text.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*Animations*/
+
+@keyframes floatAnimationInX {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-20px); } /* Adjust as needed for the horizontal float */
+  }
+
+  @keyframes floatAnimationInY {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); } /* Adjust as needed for the horizontal float */
+  }
+
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(20px); /* Cambia la distancia que quieras que el elemento flote */
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }

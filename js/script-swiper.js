@@ -2,7 +2,10 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-  
+    centeredSlides: true,
+    
+     // Evitar el scroll horizontal
+  slidesPerView: 'auto',
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
