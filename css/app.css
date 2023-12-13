@@ -15,8 +15,6 @@ body {
     line-height: normal !important;
 }
 
-
-
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 0px) and (max-width: 1024px){
     body {
@@ -39,6 +37,7 @@ body {
 }
 
 .statics {
+    padding: 3.5rem 0;
     min-height: 100vh;
     background-image: url(/img/bg-statics.png);
     background-size: cover;
@@ -46,6 +45,7 @@ body {
 }
 
 .section3 {
+    padding: 6rem 0;
     min-height: 100vh;
     background-image: url(/img/bg-section3.png);
     background-size: cover;
@@ -89,7 +89,7 @@ body {
     margin: 0 auto;
 }
 
-.statics--grid-container {
+.statics--grid-container{
       gap: 3rem 0;
       padding: 20px; /* Optional padding */
   }
@@ -98,12 +98,12 @@ body {
     background-image: url(/img/empaque.png);
     background-size: contain;
     background-repeat: no-repeat;
-      flex: 1 0 100%; /* Each image takes up the full width in a new line */
-      max-width: 600px; /* Two images in a row with gap between them */
-      width: 100%;
-      border-radius: 8px;
-      text-align: center;
-      
+    background-position: 3rem 0rem;
+    flex: 1 0 100%; /* Each image takes up the full width in a new line */
+    max-width: 600px; /* Two images in a row with gap between them */
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
   }
 
   .statics--grid-number {
@@ -150,6 +150,25 @@ body {
     max-width: 17rem;
 }
 
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    display: none !important;
+}
+
+.swiper-pagination {
+    margin-top: 20rem !important;
+}
+
+.swiper-wrapper {
+    margin-bottom: 4rem;
+}
+
+.swiper-pagination-bullet-active {
+    background: white !important;
+}
+.swiper-button-prev, .swiper-button-next {
+    width: 34px !important;
+    height: 34px !important;
+}
 .ff-black {
     font-size: 46px;
 }
