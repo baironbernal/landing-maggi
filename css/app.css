@@ -7,11 +7,21 @@
 }
 
 body {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'KitchenCupboard-Crafted' !important; /* Reemplaza 'sans-serif' con una fuente de respaldo si es necesario */
+    line-height: normal !important;
+}
 
+
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 0px) and (max-width: 1024px){
+    body {
+        min-width: 100vh;
+    }
 }
 
 .banner {
@@ -35,6 +45,86 @@ body {
     background-repeat: no-repeat;
 }
 
+.section3 {
+    min-height: 100vh;
+    background-image: url(/img/bg-section3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section3 img {
+    margin: 0 auto;
+    max-width: 250px;
+    max-height: 367px;
+}
+
+.section3--paradise{
+    margin: 0 auto;
+    padding: 6rem;
+    background-image: url(/img/green-paradise.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.section3--title {
+    font-size: 71px;
+}
+.section3--description {
+    font-size: 30px;
+}
+
+.section3--logo-maggi{
+    margin-top: -10rem !important;
+    margin-bottom: 6rem !important;
+}
+
+.section3--red {
+    background-image: url(/img/backgrounds/red-text.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    text-align: center;
+    max-width: 25rem;
+    margin: 0 auto;
+}
+
+.statics--grid-container {
+      gap: 3rem 0;
+      padding: 20px; /* Optional padding */
+  }
+
+  .statics--grid-item{
+    background-image: url(/img/empaque.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+      flex: 1 0 100%; /* Each image takes up the full width in a new line */
+      max-width: 600px; /* Two images in a row with gap between them */
+      width: 100%;
+      border-radius: 8px;
+      text-align: center;
+      
+  }
+
+  .statics--grid-number {
+    font-size: 160px;
+    color: #5D8F44;
+  }
+
+  .parallelogram-container {
+    min-width: 28rem;
+    width: max-content;
+    transform: skew(20deg); /* Adjust the skew angle as needed */
+    margin: 0 auto; /* Add margin for spacing */
+    padding: 15px;
+  }
+
+  .parallelogram--text {
+    text-align: center;
+    transform: skew(-20deg);
+    display: block;
+  }
+
 .floating-image {
     animation: floatAnimationInY 2s ease-in-out infinite;
 }
@@ -53,27 +143,21 @@ body {
 }
 
 .swiper-slide {
-    
     text-align: center;
+}
+
+.swiper-slide img {
+    max-width: 17rem;
 }
 
 .ff-black {
     font-size: 46px;
 }
 
-.ff-cononce-mas{
+.ff-conoce-mas{
     font-size: 25px;
 }
 
-.bg-text-white {
-    margin: 0 auto;
-    text-align: center;
-    padding: 14px;
-    max-width: 31rem;
-    background-image: url(/img/backgrounds/white-text.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 /*Animations*/
 
 @keyframes floatAnimationInX {

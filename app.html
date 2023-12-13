@@ -10,26 +10,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=KitchenCupboard-Crafted:wght@400&display=swap">
 
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+
+
 </head>
 
 <body>
     <section class="banner">
         <div class="container">
             <div class="d-flex flex-wrap justify-content-between">
-                <div class="banner-images mt-3">
+                <div class="banner-images mt-3" data-aos="fade-right">
                     <img class="d-block w-50" src="img/maggi-logo.png" alt="Maggi">
                     <img class="d-block w-50" src="img/bueno-dia.png" alt="Bueno dia">
                 </div>
                 <div class="banner-logos mt-5">
-                    <img class="d-block w-75" src="img/green-icons.png" alt="Icons Green">
+                    <img class="d-block w-75 " src="img/green-icons.png" alt="Icons Green">
                 </div>
             </div>
         </div>
@@ -38,9 +36,10 @@
         <div class="overlay">
             <img src="/img/tomates-animation.png" alt="Floating Images" class="pepitas floating-image mw-100 w-100">
         </div>
-        <div class="container wow animate__animated animate__bounce">
+        <div class="container">
 
-            <p class="p-2 text-center ff-black my-5">Ahora con nuestros empaques con menos plásticos </p>
+            <p class="p-2 text-center ff-black my-5" data-aos="fade-left">Ahora con nuestros empaques con menos
+                plásticos </p>
             <!-- Slider main container -->
             <div class="swiper">
                 <!-- Additional required wrapper -->
@@ -66,17 +65,73 @@
                 <!-- If we need scrollbar -->
                 <div class="swiper-scrollbar"></div>
             </div>
-            <p class="p-2 text-center ff-black my-5">Desarrollamos empaques con menos plástico,
+            <p class="p-2 text-center ff-black my-5" data-aos="fade-right">Desarrollamos empaques con menos plástico,
                 <br>
                 mismo contenido y también empaques recictables
             </p>
-            <p class="bg-text-white ff-cononce-mas">
-                Conoce más dónde reciclar tus productos Maggi®
+            <p class="ff-conoce-mas parallelogram-container" style="background-color: white;">
+                <span class="parallelogram--text ">Conoce más dónde reciclar tus productos Maggi®</span>
             </p>
         </div>
     </section>
     <section class="statics">
+        <div class="container">
+            <div class="statics--grid-container d-flex flex-wrap justify-content-center align-items-center d-block ">
+                <div class="statics--grid-item">
+                    <p class="statics--grid-number">79%</p>
+                    <p class="ff-conoce-mas parallelogram-container"
+                        style="background-color:#5D8F44; color: white !important;">
+                        <span class="parallelogram--text">79% De productos con empaques Reciclajes* </span>
+                    </p>
+                </div>
+                <div class="statics--grid-item">
+                    <p class="statics--grid-number">100%</p>
+                    <p class="ff-conoce-mas parallelogram-container"
+                        style="background-color:#5D8F44; color: white !important;">
+                        <span class="parallelogram--text">98% De productos con menos empaques, mismo contenido* </span>
+                    </p>
+                </div>
+                <div class="statics--grid-item">
+                    <p class="statics--grid-number">100%</p>
+                    <p class="ff-conoce-mas parallelogram-container"
+                        style="background-color:#5D8F44; color: white !important;">
+                        <span class="parallelogram--text">100% En Nestlé recolectamos y reciclamos <br>
+                            la misma cantidad de plástico que usamos*</span>
+                    </p>
+                </div>
+            </div>
+            <p class="ff-conoce-mas parallelogram-container" style="background-color: #FCE600;">
+                <span class="wow fadeIn parallelogram--text" data-wow-duration="1s" data-wow-delay="0.5s">Nos
+                    preocupamos por generar un impacto positivo en la vida de
+                    todos,
+                    desde el proceso que comienza <br>
+                    en la granja hasta que nuestros productos llegan a tu mesa.</span>
+            </p>
 
+        </div>
+    </section>
+    <section class="section3">
+        <div class="container">
+            <div class="row">
+                <img class="mb-4 d-block" src="img/bueno-de-verdad.png" alt="Bueno dia">
+                <img class="d-block" src="img/aviso.png" alt="Bueno dia">
+            </div>
+            <div class="section3--paradise text-center text-white">
+                <img class="section3--logo-maggi d-block w-25" src="img/maggi-logo.png" alt="Maggi">
+                <p class="section3--title"> Simplemente amigable con el ambiente</p>
+                <br>
+                <p class="section3--description">
+                    En Maggi® lideramos el camino hacia una dieta más sostenible, ofreciendo deliciosas alternativas con
+                    menos dependencia del consumo animal. Nuestros envases también reflejan nuestro compromiso
+                    responsable, y promovemos activamente el reciclaje.
+                </p>
+            </div>
+
+            <div class="section3--red my-3">
+                <p class="text-white">*Juntos simplemente <br>
+                    cocinamos la diferencia!</p>
+            </div>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -84,6 +139,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
