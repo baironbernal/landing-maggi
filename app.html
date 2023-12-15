@@ -13,21 +13,20 @@
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=KitchenCupboard-Crafted:wght@400&display=swap">
-
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
+<body class="position-relative">
+    <img src="img/slide-left.png" class="slide-left position-fixed z-1" alt="Slide Left">
     <section class="banner">
         <div class="container">
-            <div class="d-flex flex-wrap justify-content-between">
-                <div class="banner-images mt-3" data-aos="fade-right">
+            <div class="d-flex flex-wrap justify-content-between animate__animated animate__bounce">
+                <div class="banner-images mt-5" data-aos="fade-right">
                     <img class="d-block w-50" src="img/maggi-logo.png" alt="Maggi">
                     <img class="d-block w-50" src="img/bueno-dia.png" alt="Bueno dia">
                 </div>
                 <div class="banner-logos mt-5">
-                    <img class="d-block w-75 " src="img/green-icons.png" alt="Icons Green">
+                    <img class="d-block w-75 mt-4 " src="img/green-icons.png" alt="Icons Green">
                 </div>
             </div>
         </div>
@@ -37,11 +36,11 @@
             <img src="/img/tomates-animation.png" alt="Floating Images" class="pepitas floating-image mw-100 w-100">
         </div>
         <div class="container">
-
-            <p class="p-2 text-center ff-black my-5" data-aos="fade-left">Ahora con nuestros empaques con menos
+            <p class="p-2 text-center ff-black my-5 wow animate__animated animate__fadeInDownBig">Ahora con nuestros
+                empaques con menos
                 plásticos </p>
             <!-- Slider main container -->
-            <div class="swiper">
+            <div class="swiper wow animate__animated animate__bounceInLeft">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -64,7 +63,8 @@
                 <!-- If we need scrollbar -->
                 <div class="swiper-scrollbar"></div>
             </div>
-            <p class="p-2 text-center ff-black my-5" data-aos="fade-right">Desarrollamos empaques con menos plástico,
+            <p class="p-2 text-center ff-black my-5 wow animate__animated animate__fadeInUpBig">Desarrollamos empaques
+                con menos plástico,
                 <br>
                 mismo contenido y también empaques recictables
             </p>
@@ -75,47 +75,49 @@
     </section>
     <section class="statics">
         <div class="container">
-            <div class="statics--grid-container d-flex flex-wrap justify-content-center align-items-center d-block ">
+            <div
+                class="statics--grid-container d-flex flex-wrap justify-content-center align-items-center d-block  wow animate__animated animate__zoomInDown">
                 <div class="statics--grid-item">
                     <p class="statics--grid-number"><span id="counter1" class="counter">79</span>%</p>
                     <p class="ff-conoce-mas parallelogram-container"
                         style="background-color:#5D8F44; color: white !important;">
-                        <span class="parallelogram--text">79% De productos con empaques Reciclajes* </span>
+                        <span class="parallelogram--text">De productos con empaques Reciclajes* </span>
                     </p>
                 </div>
                 <div class="statics--grid-item">
                     <p class="statics--grid-number"><span id="counter2" class="counter">100</span>%</p>
                     <p class="ff-conoce-mas parallelogram-container"
                         style="background-color:#5D8F44; color: white !important;">
-                        <span class="parallelogram--text">98% De productos con menos empaques, mismo contenido* </span>
+                        <span class="parallelogram--text"> De productos con menos empaques, mismo contenido* </span>
                     </p>
                 </div>
                 <div class="statics--grid-item">
                     <p class="statics--grid-number"><span id="counter3" class="counter">100</span>%</p>
                     <p class="ff-conoce-mas parallelogram-container"
                         style="background-color:#5D8F44; color: white !important;">
-                        <span class="parallelogram--text">100% En Nestlé recolectamos y reciclamos <br>
+                        <span class="parallelogram--text">En Nestlé recolectamos y reciclamos <br>
                             la misma cantidad de plástico que usamos*</span>
                     </p>
                 </div>
             </div>
             <p class="ff-conoce-mas parallelogram-container" style="background-color: #FCE600;">
-                <span class="wow fadeIn parallelogram--text" data-wow-duration="1s" data-wow-delay="0.5s">Nos
+                <span class="wow fadeIn parallelogram--text wow animate__animated animate__fadeInUpBig">Nos
                     preocupamos por generar un impacto positivo en la vida de
                     todos,
                     desde el proceso que comienza <br>
                     en la granja hasta que nuestros productos llegan a tu mesa.</span>
             </p>
-
         </div>
     </section>
+
     <section class="section3">
         <div class="container">
             <div class="row">
-                <img class="mb-4 d-block" src="img/bueno-de-verdad.png" alt="Bueno dia">
-                <img class="d-block" src="img/aviso.png" alt="Bueno dia">
+                <img class="mb-4 d-block wow animate__animated animate__backInDown" src="img/bueno-de-verdad.png"
+                    alt="Bueno dia">
+                <img class="d-block wow animate__animated animate__backInUp" src="img/aviso.png" alt="Bueno dia">
             </div>
-            <div class="section3--paradise text-center text-white">
+            <div class="section3--paradise text-center text-white wow animate__animated animate__bounceInLeft">
                 <img class="section3--logo-maggi d-block w-25" src="img/maggi-logo.png" alt="Maggi">
                 <p class="section3--title"> Simplemente amigable con el ambiente</p>
                 <br>
@@ -126,7 +128,7 @@
                 </p>
             </div>
             <br>
-            <div class="section3--red my-3">
+            <div class="section3--red my-3 wow animate__animated animate__fadeInUpBig">
                 <p class="text-white p-4">*Juntos simplemente <br>
                     cocinamos la diferencia!</p>
             </div>
@@ -138,7 +140,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 

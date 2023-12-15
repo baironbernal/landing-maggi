@@ -16,17 +16,17 @@ body {
 }
 
 /* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 0px) and (max-width: 1024px){
-    body {
-        min-width: 100vh;
-    }
-}
+
 
 .banner {
     min-height: 100vh;
     background-image: url(/img/bg-banner.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.slide-left  {
+    top: 50px;
 }
 
 .carousel {
@@ -38,7 +38,6 @@ body {
 
 .statics {
     padding: 3.5rem 0;
-    min-height: 100vh;
     background-image: url(/img/bg-statics.png);
     background-size: cover;
     background-repeat: no-repeat;

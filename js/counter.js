@@ -38,24 +38,3 @@ function updateCounter(index) {
 counters.forEach((counter, index) => {
   updateCounter(index);
 });
-
-// Create an Intersection Observer
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // Find the index of the current counter container
-      const index = counterContainers.indexOf(entry.target);
-      if (index !== -1) {
-        // Start the counter animation for the corresponding index
-        updateCounter(index);
-        // Unobserve the target to avoid redundant animations
-        observer.unobserve(entry.target);
-      }
-    }
-  });
-}, { threshold: 0.5 }); // Adjust the threshold as needed
-
-// Observe each counter container
-counterContainers.forEach(container => {
-  observer.observe(container);
-});
