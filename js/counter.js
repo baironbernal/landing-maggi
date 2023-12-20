@@ -34,7 +34,3 @@ function updateCounter(index) {
   }
 }
 
-// Start the counters animation
-counters.forEach((counter, index) => {
-  updateCounter(index);
-});

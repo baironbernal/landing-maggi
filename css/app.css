@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'KitchenCupboard-Crafted'; /* Nombre de la fuente para su uso posterior */
     src: local('KitchenCupboard-Crafted'), local('MiFuente-Regular'),
-         url('fonts/KitchenCupboard-Crafted.otf') format('otf');
+         url(https://www.nestle-contigo.ec/themes/custom/others/maggi/v2/fonts/KitchenCupboard-Crafted.otf) format('otf');
     font-weight: 400; /* Puedes ajustar esto según las variantes disponibles de tu fuente */
     font-style: normal; /* Puedes ajustar esto según las variantes disponibles de tu fuente */
 }
@@ -20,7 +20,7 @@ body {
 
 .banner {
     min-height: 100vh;
-    background-image: url(/img/bg-banner.png);
+    background-image: url(https://www.nestle-contigo.ec/themes/custom/others/maggi/v2/img/bg-banner.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -31,14 +31,14 @@ body {
 
 .carousel {
     min-height: 100vh;
-    background-image: url(/img/bg-carousel.png);
+    background-image: url(https://www.nestle-contigo.ec/themes/custom/others/maggi/v2/img/bg-carousel.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .statics {
     padding: 3.5rem 0;
-    background-image: url(/img/bg-statics.png);
+    background-image: url(https://www.nestle-contigo.ec/themes/custom/others/maggi/v2/img/bg-statics.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -46,7 +46,7 @@ body {
 .section3 {
     padding: 6rem 0;
     min-height: 100vh;
-    background-image: url(/img/bg-section3.png);
+    background-image: url(https://www.nestle-contigo.ec/themes/custom/others/maggi/v2/img/bg-section3.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -60,7 +60,7 @@ body {
 .section3--paradise{
     margin: 0 auto;
     padding: 6rem;
-    background-image: url(/img/green-paradise.png);
+    background-image: url(https://www.nestle-contigo.ec/themes/custom/others/maggi/v2/img/green-paradise.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -79,7 +79,7 @@ body {
 }
 
 .section3--red {
-    background-image: url(/img/backgrounds/red-text.png);
+    background-image: url(https://www.nestle-contigo.ec/themes/custom/others/maggi/v2/img/backgrounds/red-text.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     font-size: 30px;
@@ -94,7 +94,7 @@ body {
   }
 
   .statics--grid-item{
-    background-image: url(/img/empaque.png);
+    background-image: url(https://www.nestle-contigo.ec/themes/custom/others/maggi/v2/img/empaque.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 3rem 0rem;

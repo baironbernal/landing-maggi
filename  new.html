@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scroll Detection</title>
+</head>
+
+<body>
+    <div style="height: 800px; background-color: lightgray;">
+        <!-- Content before the target div -->
+    </div>
+
+    <div id="targetDiv" style="height: 400px; background-color: lightblue;">
+        <!-- Your target div -->
+    </div>
+
+    <div style="height: 800px; background-color: lightgray;">
+        <!-- Content after the target div -->
+    </div>
+
+    <script>
+        // Function to be executed when the target div is intersecting
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // The target div is in view
+                    alert('Target div is in view!');
+                    // You can perform other actions here
+                }
+            });
+        }
+
+        // Options for the Intersection Observer
+        const options = {
+            root: null, // Use the viewport as the root
+            rootMargin: '0px', // No margin
+            threshold: 0.5, // Trigger when 50% of the target is visible
+        };
+
+        // Create the Intersection Observer
+        const observer = new IntersectionObserver(handleIntersection, options);
+
+        // Observe the target div
+        const targetDiv = document.getElementById('targetDiv');
+        observer.observe(targetDiv);
+    </script>
+</body>
+
+</html>
